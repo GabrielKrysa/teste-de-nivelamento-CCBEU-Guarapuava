@@ -80,18 +80,18 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+
+                <div class="img" >
+                    <img  src="http://www.ccbeuguarapuava.com.br/wp-content/uploads/2017/10/logo-ccbeu-png-1-1024x225.png" class="img-fluid" alt="Responsive image"/>
                 </div>
 
+                <div class="title m-b-md">
+                    Placement Test
+                </div>
+
+
+
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
         </div>
