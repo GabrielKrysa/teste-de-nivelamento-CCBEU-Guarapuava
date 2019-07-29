@@ -13,7 +13,7 @@
         <style>
             html, body {
                 background-color: #fff;
-                color: #636b6f;
+                color: #3D71A5;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
@@ -68,12 +68,12 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a style="color:#3D71A5" href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
+                        <a style="color:#3D71A5" href="{{ route('login') }}">Login</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
+                            <a style="color:#3D71A5" href="{{ route('register') }}">Register</a>
                         @endif
                     @endauth
                 </div>
@@ -81,14 +81,13 @@
 
             <div class="content">
 
-                <div class="img" >
-                    <img  src="http://www.ccbeuguarapuava.com.br/wp-content/uploads/2017/10/logo-ccbeu-png-1-1024x225.png" class="img-fluid" alt="Responsive image"/>
-                </div>
-
                 <div class="title m-b-md">
                     Placement Test
                 </div>
-
+                <div class="img" >
+                    <img src="http://www.ccbeuguarapuava.com.br/wp-content/uploads/2017/10/logo-ccbeu-png-1-1024x225.png"
+                         class="img-fluid" height="109.8px" width="500px"/>
+                </div>
 
 
                 <div class="links">
