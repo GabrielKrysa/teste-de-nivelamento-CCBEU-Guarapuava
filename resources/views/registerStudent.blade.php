@@ -48,7 +48,6 @@
                                     <label for="email" class="col-md-2 text-md-right">Phone Number</label>
                                     <input class="col-md-3" id="phonenumber" type="text" name="phonenumber"
                                             required style="border-color:#4aa0e6" required>
-
                                 </td>
                             </tr>
                         </div>
@@ -67,21 +66,18 @@
                                     <label for="email" class="col-md-2 text-md-right">CEP</label>
                                     <input class="col-md-3 cep-mask" id="cep" name="cep" type="text"
                                             required style="border-color:#4aa0e6" required>
-
                                 </td>
 
                                 <td>
                                     <label for="email" class="col-md-2 text-md-right">House's Address </label>
                                     <input class="col-md-3" id="address" type="text" name="address"
                                            required style="border-color:#4aa0e6" required>
-
                                 </td>
 
                                 <td>
                                     <label for="email" class="col-md-2 text-md-right">Neighborhood</label>
                                     <input class="col-md-3" id="neighborhood" type="text" name="neighborhood"
                                            required style="border-color:#4aa0e6" required>
-
                                 </td>
 
                                 <td>
@@ -128,6 +124,44 @@
                                 </td>
                             </tr>
                         </div>
+
+
+                        <table>
+                            <tr>
+                                <thead>
+                                <th scope="col"><p class="leed">Schooling and Work</p></th>
+                                </thead>
+                            </tr>
+                        </table>
+                        <div class="card-body">
+                            <tr>
+                                <td>
+                                    <label for="email" class="col-md-3 text-md-right">Você ja estudou inglês</label>
+                                    <select class="col-md-8" id="estudy" type="text" name="estudy"
+                                            required style="border-color:#4aa0e6" required> >
+                                        <option id="1">Sim</option>
+                                        <option id="2">Não</option>
+                                    </select>
+
+                                    <label for="email" class="col-md-3 text-md-right">Qual escola e nivel/curso</label>
+                                    <input class="col-md-8" id="scholl" type="text" name="scholl"
+                                           required style="border-color:#4aa0e6" required>
+
+                                    <label for="email" class="col-md-3 text-md-right">Por quanto tempo</label>
+                                    <input class="col-md-8" id="time" type="text" name="time"
+                                           required style="border-color:#4aa0e6" required>
+
+                                    <label for="email" class="col-md-3 text-md-right">Por que você pretende mudar de escola</label>
+                                    <input class="col-md-8" id="change" type="text" name="change"
+                                           required style="border-color:#4aa0e6" required>
+
+                                    <label for="email" class="col-md-3 text-md-right">Por que escolheu o CCBEU</label>
+                                    <input class="col-md-8" id="change" type="text" name="change"
+                                           required style="border-color:#4aa0e6" required>
+                                </td>
+                            </tr>
+                        </div>
+
                         <div class="form-group" align="center">
                             <button class="btn-primary col-6" type="submit">Register</button>
                         </div>
