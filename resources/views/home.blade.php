@@ -7,14 +7,23 @@
             <div class="card">
                 <div class="card-header">Dashboard</div>
 
+                <tr>
+                    <thead>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    </thead>
+                </tr>
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+                    <tr>
+                        <td><a class="btn btn-lg btn-primary" href="{{route('registerStudent')}}">Register Student</a>
+                        </td>
+                        <td><a class="btn btn-lg" style="background-color:hotpink">Show Registered
+                                Students</a></td>
+                        <td><a class="btn btn-lg btn-danger">Show Registered Students</a></td>
+                    </tr>
 
-                   
+
                 </div>
             </div>
         </div>
