@@ -17,6 +17,8 @@ class CreateRecomendationsTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('phone');
+            $table->string('updated_at');
+            $table->string('created_at');
         });
     }
 

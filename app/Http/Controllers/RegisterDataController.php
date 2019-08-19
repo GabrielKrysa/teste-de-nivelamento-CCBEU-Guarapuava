@@ -8,19 +8,21 @@ class RegisterDataController extends Controller
 {
     public function register(Request $request)
     {
-        $Alldata = $request->all();
+        $allData = $request->all();
 
-        dd($Alldata);
-
-        $getIdLastStudentRegistered = RegisterStudentController::register($Alldata);
+        $getIdLastStudentRegistered = RegisterStudentController::register($allData);
         if (!(is_numeric($getIdLastStudentRegistered))) {
             $message = "Nome e endereço de e-mail já cadastrado no sistema";
             return redirect()->back()->with('alertDontOK', $message);
         }
 
-        $result = RegisterStudentAddressController::register($Alldata, $getIdLastStudentRegistered);
+        $resultAddress = RegisterStudentAddressController::register($allData, $getIdLastStudentRegistered);
+        $resultRecomendation = RecomendationController::registerRecomendation($allData);
 
-        if ($result) {
+        if ($resultAddress && $resultRecomendation) {
+            $message = "Estudante e recomendações registradas com sucesso no sistema";
+            return redirect()->back()->with('alertOK', $message);
+        } else if ($resultAddress) {
             $message = "Estudante registrado com sucesso no sistema";
             return redirect()->back()->with('alertOK', $message);
         }
