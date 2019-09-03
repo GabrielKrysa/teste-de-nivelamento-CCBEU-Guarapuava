@@ -18,7 +18,6 @@ class RegisterStudentController extends Controller
 
     public static function register($data)
     {
-
         $message = "";
 
         if (DB::table('students')->where('email', '=', $data['email'])->count() > 0 && DB::table('students')->where('name', '=', $data['name'])->count()) {

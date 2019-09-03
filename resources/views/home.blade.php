@@ -24,11 +24,21 @@
                 </tr>
                 <div class="card-body">
                     <tr>
-                        <td><a class="btn btn-lg btn-primary" href="{{route('registerStudent')}}">Register Student</a>
+                        <td><a class="btn btn-lg btn-primary" href="{{route('registerStudent')}}">Registrar
+                                Estudante</a>
                         </td>
-                        <td><a class="btn btn-lg" style="background-color:hotpink">Show Registered
+                        <td><a class="btn btn-lg btn-primary" href="{{route('registeredstudents')}}">Mostrar Estudantes
+                                Cadastrados
                                 Students</a></td>
-                        <td><a class="btn btn-lg btn-danger">Show Registered Students</a></td>
+                    </tr>
+                    <br>
+                    <br>
+                    <tr>
+                        <td><a class="btn btn-lg btn-primary" href="{{route('recomendations')}}">Recomendações</a>
+                        </td>
+                        <td><a class="btn btn-lg btn-primary" href="{{route('testIndex')}}">Iniciar teste</a>
+                        </td>
+
                     </tr>
 
 

@@ -26,6 +26,5 @@ class RegisterDataController extends Controller
             $message = "Estudante registrado com sucesso no sistema";
             return redirect()->back()->with('alertOK', $message);
         }
-
     }
 }

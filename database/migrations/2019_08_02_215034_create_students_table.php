@@ -28,6 +28,16 @@ class CreateStudentsTable extends Migration
             $table->string('studiedTime')->default('null');
             $table->string('change')->default('null');
             $table->string('why');
+            $table->integer('basicOne');
+            $table->integer('basicTwo');
+            $table->integer('highInterOne');
+            $table->integer('highInterTwo');
+            $table->integer('interOne');
+            $table->integer('interTwo');
+            $table->integer('teensOne');
+            $table->integer('teensTwo');
+            $table->integer('teensThree');
+
             $table->string('updated_at');
             $table->string('created_at');
         });

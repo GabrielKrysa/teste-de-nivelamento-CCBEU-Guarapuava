@@ -6,9 +6,11 @@ use App\Recomendation;
 
 class RecomendationController extends Controller
 {
+
     public function index()
     {
-
+        $recomendations  = $this->selectRecomendations();
+        return view('recomendations', ['recomendations' => $recomendations]);
     }
 
     public static function registerRecomendation($data)
@@ -34,5 +36,11 @@ class RecomendationController extends Controller
         }
 
         return $insert;
+    }
+
+    public function selectRecomendations()
+    {
+        $recomendations = Recomendation::all();
+        return $recomendations;
     }
 }
