@@ -21,6 +21,8 @@ Route::get('/entrar', function () {
 
 Route::get('/basictwo', 'BasicTwoController@index')->name('basictwo');
 
+Route::get('/highinterone', 'HighInterOneController@index')->name('highinterone');
+
 Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
 
 Route::get('/registerstudent', 'RegisterStudentController@index')->name('registerStudent')->middleware('auth');
@@ -37,5 +39,7 @@ Route::post('/acessallowed', 'TestsController@enter')->name('acesstest')->middle
 Route::post('/studentregister', 'RegisterDataController@register')->name('studentRegister');
 
 Route::post('/bacistwoverification','BasicTwoController@getResults')->name('bacistwoverification');
+
+Route::post('/highinteroneverification', 'HighInterOneController@getResults')->name('highinteroneverification');
 
 Auth::routes();
