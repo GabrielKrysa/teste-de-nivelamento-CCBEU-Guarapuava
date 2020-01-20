@@ -42,4 +42,6 @@ Route::post('/bacistwoverification','BasicTwoController@getResults')->name('baci
 
 Route::post('/highinteroneverification', 'HighInterOneController@getResults')->name('highinteroneverification');
 
+Route::get('/teste','BasicTwoController@teste');
+
 Auth::routes();

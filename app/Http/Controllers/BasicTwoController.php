@@ -12,6 +12,10 @@ class BasicTwoController extends Controller
         return view('basic_two', ["students" => Student::all()]);
     }
 
+    public function teste(){
+        return view('basic_two', ["students" => Student::all()]);
+    }
+
     public function getResults(Request $request)
     {
         $data = $request->all();
